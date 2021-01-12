@@ -1004,7 +1004,7 @@ export interface XPadding {
  * In the current lib, there is not actual implementation for XAxis.
  */
 // NOTE: the lib's implementation doesn't inherits the event props (it's kept in this definition due to the previous typing definition has it).
-export interface XAxisProps extends EventAttributes {
+export interface XAxisProps extends EventAttributes, SVGElement {
     allowDecimals?: boolean;
     hide?: boolean;
     // The name of data displayed in the axis
@@ -1064,7 +1064,7 @@ export interface YPadding {
 }
 
 // NOTE: the lib's implementation doesn't inherits the event props (it's kept in this definition due to the previous typing definition has it).
-export interface YAxisProps extends EventAttributes {
+export interface YAxisProps extends EventAttributes, SVGElement {
     allowDecimals?: boolean;
     hide?: boolean;
     // The name of data displayed in the axis
